@@ -1,0 +1,4 @@
+package goauthinvoice
+func main() {
+	
+}
