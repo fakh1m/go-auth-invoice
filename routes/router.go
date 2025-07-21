@@ -14,7 +14,7 @@ func SetupRouter() *mux.Router {
 
 	invoiceRouter := r.PathPrefix("/api/invoices").Subrouter()
 	invoiceRouter.Use(middleware.JWTMiddleware)
-	invoiceRouter.HandleFunc("", controller.GetInvoices).Methods("GET")
+	invoiceRouter.HandleFunc("", controller.GetInvoice).Methods("GET")
 
 	return r
 
